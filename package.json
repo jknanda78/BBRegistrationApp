@@ -1,0 +1,25 @@
+{
+  "name": "backbone-registration-app",
+  "version": "1.0.0",
+  "description": "Registration application built with BackboneJS, ES6, Jasmine, Sass &amp; HTML5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jknanda78/BBRegistrationApp.git"
+  },
+  "keywords": [
+    "Backbone",
+    "ES6",
+    "Sass",
+    "HTML5"
+  ],
+  "author": "Jyoti Kaustuv Nanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jknanda78/BBRegistrationApp/issues"
+  },
+  "homepage": "https://github.com/jknanda78/BBRegistrationApp#readme"
+}

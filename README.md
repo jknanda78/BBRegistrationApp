@@ -6,6 +6,11 @@ Pre-requisites
  - Node, NPM installed
  - Git installed
 
+ Install Webpack
+ ---------------
+  - npm install webpack -g
+  - npm install webpack-dev-server -g
+
 Steps to Demo
 -------------
 - git clone https://github.com/jknanda78/BBRegistrationApp.git

@@ -1,0 +1,44 @@
+/*
+ * Normalization
+ */
+* {box-sizing: border-box;}
+a:hover, a:link, a:visited, a:active {text-decoration: none; color: none;}
+
+body, html {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 100%;
+  color: #585858;
+  width: 100%;
+  height:100%;
+}
+form:after, div:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+form {
+  border: 1px solid #CCCCCC;
+  margin: 0;
+  padding: 10px;
+}
+form div {
+  padding: 2px;
+  margin: 4px 0;
+  clear: both;
+}
+form label {
+  display: block;
+  padding: 2px;
+  width: 100px;
+  float: left;
+}
+form label ~ input, {
+  padding: 2px;
+  width: 100px;
+  float: left;
+}
+span.error {
+  display: inline-block;
+  width: 200px;
+  color: red;
+}

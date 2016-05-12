@@ -6,8 +6,8 @@ _.extend(Backbone.Model.prototype, BBValidation.mixin);
 
 const Step1Model = Backbone.Model.extend({
   defaults: {
-    firstName: '',
-    lastName: ''
+    firstName: "",
+    lastName: ""
   },
   validation: {
     firstName: {
@@ -21,11 +21,11 @@ const Step1Model = Backbone.Model.extend({
 
 const Step2Model = Backbone.Model.extend({
   defaults: {
-    address1: '',
-    address2: '',
-    city: '',
-    state: '',
-    zip: ''
+    address1: "",
+    address2: "",
+    city: "",
+    state: "",
+    zip: ""
   },
   validation: {
     address1: {
@@ -43,4 +43,4 @@ const Step2Model = Backbone.Model.extend({
   }
 });
 
-export { Step1Model, Step2Model };
+export {Step1Model, Step2Model};

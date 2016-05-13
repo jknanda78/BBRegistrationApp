@@ -1,8 +1,7 @@
 import Backbone from "backbone";
-import _ from "underscore";
 import BBValidation from "backbone-validation";
 
-_.extend(Backbone.Model.prototype, BBValidation.mixin);
+Object.assign(Backbone.Model.prototype, BBValidation.mixin);
 
 const Step1Model = Backbone.Model.extend({
   defaults: {

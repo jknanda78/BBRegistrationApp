@@ -1,14 +1,10 @@
 import _ from "underscore";
 import $ from "jquery";
-import {Step2Model} from "../models/signup";
 import BaseView from "./Base/baseView";
 
 const Step1Template = require("../../templates/step1.html");
 const Step2Template = require("../../templates/step2.html");
 const Step3Template = require("../../templates/step3.html");
-
-const step2Model = new Step2Model;
-let step1Model;
 
 class Step1 extends BaseView {
   constructor(options) {
@@ -19,7 +15,7 @@ class Step1 extends BaseView {
   get events() {
     return {
       "submit #step1Form": "validateStep1"
-    }
+    };
   }
 
   validateStep1(e) {
@@ -51,7 +47,7 @@ class Step2 extends BaseView {
   get events() {
     return {
       "submit #step2Form": "validateStep2"
-    }
+    };
   }
 
   validateStep2(e) {

@@ -4,7 +4,7 @@ import $ from "jquery";
 class BaseView extends View {
   constructor(options) {
     super(options);
-    this.setElement($('#main'), true);
+    this.setElement($("#main"), true);
     this.defaultState = {
       error: {}
     };
@@ -12,7 +12,7 @@ class BaseView extends View {
   }
 
   setState(obj, clbk) {
-    if(typeof obj === 'object' && !Object.keys(obj).length) {
+    if(typeof obj === "object" && !Object.keys(obj).length) {
       return;
     }
     this.state = Object.assign({}, this.defaultState, obj);

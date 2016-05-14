@@ -1,5 +1,6 @@
-import Backbone from "backbone"
-import { Step1, Step2, Step3 } from "./src/js/components/signup"
+import Backbone from "backbone";
+import { Step1Model, Step2Model } from "./src/js/models/signup";
+import { Step1, Step2, Step3 } from "./src/js/components/signup";
 
 const MainRouter = Backbone.Router.extend({
   routes: {
@@ -8,16 +9,18 @@ const MainRouter = Backbone.Router.extend({
     'step3': 'step3'
   },
   step1: () => {
-    const Step1View = new Step1;
-    Step1View.render(Step1View);
+    const step1Model = new Step1Model;
+    const Step1View = new Step1({model: step1Model});
+    Step1View.render();
   },
   step2: () => {
-    const Step2View = new Step2;
-    Step2View.render(Step2View);
+    const step2Model = new Step2Model;
+    const Step2View = new Step2({model: step2Model});
+    Step2View.render();
   },
   step3: () => {
     const Step3View = new Step3;
-    Step3View.render(Step3View);
+    Step3View.render();
   }
 });
 
